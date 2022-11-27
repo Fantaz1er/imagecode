@@ -45,6 +45,7 @@ class ImageCode(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
+        self.iconbitmap("favicon.ico")
         self.title(ImageCode.__name__)
         self.geometry(f"{ImageCode.WIDTH}x{ImageCode.HEIGHT}")
         self.protocol("WM_DELETE_WINDOW", self.on_closing)  # call .on_closing() when app gets closed
